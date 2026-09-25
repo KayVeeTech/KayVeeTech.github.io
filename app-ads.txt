@@ -1,0 +1,4 @@
+ownerdomain=kayveetech.com
+
+#Google
+google.com, pub-3938548312149969, DIRECT, f08c47fec0942fa0
