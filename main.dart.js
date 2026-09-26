@@ -21902,7 +21902,7 @@ a5_:function a5_(){},
 NC:function NC(){},
 axn(a,b){return null},
 av2(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o){var s=new A.EO(A.axi(),h,!1,o)
-s.Wl(!1,b,c,d,e,f,g,h,i,!1,k,!0,m,!0,o)
+s.Wl(!1,b,c,d,e,f,g,h,i,!1,k,!0,m,!1,o)
 return s},
 ah7(a){var s=A.av3(a)
 if(s==null)throw A.f(A.j2("No GoRouter found in context"))
@@ -69915,7 +69915,7 @@ this.d=this.d.u(0,b)
 this.aq()},
 O(a){var s=this.a
 s===$&&A.a()
-return s.a7g(a,this.d,!0)},
+return s.a7g(a,this.d,!1)},
 wO(a){var s,r,q,p,o,n,m,l=this
 if(l.d.j(0,a))return new A.bp(null,t.b5)
 s=$.a2.ad$.x.i(0,l.c.b)
@@ -69953,15 +69953,18 @@ A.FZ.prototype={
 H(){return"NavigatingType."+this.b}}
 A.js.prototype={}
 A.EN.prototype={
-aef(a,b){var s
-switch(b.a){case 0:if(!this.M8(a.gcI(),a.c))return
-$.afX()
+aef(a,b){var s,r,q=this
+switch(b.a){case 0:if(!q.M8(a.gcI(),a.c))return
+s=q.d===$.afX()
 break
-case 1:break
-case 2:break}B.f3.li("selectMultiEntryHistory",t.H)
-s=a.gcI()
-A.anv(!0,a.c,s)
-this.c=this.d=a},
+case 1:s=!0
+break
+case 2:s=!1
+break
+default:s=null}B.f3.li("selectMultiEntryHistory",t.H)
+r=a.gcI()
+A.anv(s,a.c,r)
+q.c=q.d=a},
 gv(){return this.c},
 a4T(a,b){var s,r,q,p,o,n=this,m=null,l=A.cZ(a,0,m)
 if(B.c.bc(a,"./")){s=l.qH(A.C7(n.c.gcI().gbM(),l.gbM())).gkO()
@@ -70386,10 +70389,10 @@ r=A.cZ(o.Z2(f),0,n)
 q=$.afX()
 p=$.aW()
 o.d!==$&&A.aI()
-o.d=new A.EN(k,!0,new A.eP(r,new A.js(e,n,B.f0)),q,p)
+o.d=new A.EN(k,!1,new A.eP(r,new A.js(e,n,B.f0)),q,p)
 r=A.c([],t.tc)
 r=A.V(r,t.Cm)
-q=new A.vg(!0,s,$.ajC(),p)
+q=new A.vg(!1,s,$.ajC(),p)
 q.a=new A.a2l(new A.VP(o),c,b,s,m,!0,r,q.ga0H())
 o.c!==$&&A.aI()
 o.c=q},
@@ -70519,7 +70522,8 @@ A.ac8.prototype={
 $2(a,b){var s,r=null,q=b.b<1000,p=this.a
 if(q)p.d=!0
 else p.d=!1
-q=q?new A.b1(50,80,50,80):new A.b1(100,80,100,80)
+s=b.d*0.11
+q=q?new A.b1(50,s,50,s):new A.b1(100,s,100,s)
 s=A.S6(A.cw("Privacy Policy",r,r,r,A.ae(a).ok.b,r),r,r)
 return A.ani(A.kg(r,A.hN(A.c([s,A.cQ(r,p.d?0:20,r),new A.ic("Introduction","Our privacy policy will help you understand what information we collect at KayVee Tech, how KayVee Tech uses it, and what choices you have. This Services/Apps provided by KayVee Tech at no cost and is intended for use as is. If you choose to use our Service, then you agree to the collection and use of information in relation with this policy. The Personal Information that we collect are used for providing and improving the Service. We will not use or share your information with anyone except as described in this Privacy Policy.\nThe terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, unless otherwise defined.",r),new A.ic("Information Collection and Use","For a better experience while using our Service, we may require you to provide us with certain personally identifiable information. Currently, we are not knowingly collecting any personal information (except which is stated in 'Device Information' section) but if we may collect in future, you will be informed, and if you are not comfortable in providing the information you can stop using our services. The information that we request will be retained by us and used as described in this privacy policy.The app does use third party services that may collect information used to identify you. For Example, we use Google API for serving advertisement and Google may collect information like AdId or other device information to serve advertisement.\nKayVee Tech as a company does not collect any of your personal information",r),new A.ic("Device Information","We collect information from your device such as Device or other IDs (related to Advertisement). This information will be utilized for display of advertisement. We may also collect (in some cases) the details related to app performance when there are any fatal crashes or any unexpected behaviors. This information will be used to improve the service/app.",r),new A.ic("Service Providers","We may employ third-party companies and/or individuals due to the following reasons:-To facilitate our Service;\n-To provide the Service on our behalf;\n-To perform Service-related services; or\n-To assist us in analyzing how our Service is used.\nWe want to inform users of this Service that these third parties may have access to your Personal Information.The reason is to perform the tasks assigned to them on our behalf. To know more on how they handle personal information you need to review their privacy policy.\nFor now, we just use Services provided by Google to serve ads and analyze app behaviour.",r),new A.ic("Security","We value your trust in providing us your Information, thus we are striving to use commercially acceptable means of protecting it. But remember that no method of transmission over the internet, or method of electronic storage is 100% secure and reliable, and we cannot guarantee its absolute security.",r),new A.ic("Changes to This Privacy Policy","We may update our Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes. We will notify you of any changes by posting the new Privacy Policy on this page. These changes are effective immediately, after they are posted on this page.",r),new A.ic("Contact Us","If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us.\nContact Information:\nEmail: kayveetech.contactus@gmail.com",r)],t.D),B.at,B.an,B.aQ,30),B.A,r,r,r,r,r,r,q,r,r,r))},
 $S:128}
@@ -70537,8 +70541,7 @@ return A.kg(s,A.hN(n,B.au,B.an,B.aQ,0),B.A,s,new A.a9(0,1/0,q,1/0),s,s,s,s,new A
 A.qZ.prototype={
 H(){return"UriList."+this.b}}
 A.DD.prototype={
-Ew(a){var s=" @kayvee_tech"
-return A.c([new A.oF(B.kL,new A.SF(this),s,"assets/logos/youtubeLogo.png",null),new A.oF(B.kL,new A.SG(this),s,"assets/logos/instagramLogo.png",null)],t.D)},
+Ew(a){return A.c([new A.oF(B.kL,new A.SF(this),"@kayvee.techofficial","assets/logos/youtubeLogo.png",null),new A.oF(B.kL,new A.SG(this),"@kayvee.tech","assets/logos/instagramLogo.png",null)],t.D)},
 O(a){var s,r,q,p,o=this,n=null,m=A.bH(a,n,t.w).w.a.b,l=m*0.11,k=m*0.05,j=A.cw("Contact Us",n,n,n,A.ae(a).ok.b,n),i=A.cQ(n,30,n),h=A.cw("Have a question or want to work together? Drop us a message below.",n,n,n,A.ae(a).ok.r,B.bq),g=A.cQ(n,30,n),f=o.c
 if(f){s=A.ae(a).ok.w
 s=s==null?n:s.mX(B.aU,16)}else s=n
@@ -70700,7 +70703,7 @@ Ia(a,b){var s=this
 return A.c([s.oM(a,"Home",new A.a_r(s,a,b)),s.oM(a,"Apps",new A.a_s(s,a,b)),s.oM(a,"About",new A.a_t(s,a,b)),s.oM(a,"Contact",new A.a_u(s,a,b)),s.oM(a,"Privacy Policy",new A.a_v(s,b,a))],t.Sq)},
 Ef(a){var s=null,r=A.bH(a,s,t.w).w,q=A.aF(50,B.N.C()>>>16&255,B.N.C()>>>8&255,B.N.C()&255),p=A.vn("assets/logos/KayVeeTechFullLogo.png",60,s)
 r=!(r.a.a<1000)?this.Ia(a,!1):s
-return new A.tv(!1,p,r,0,4,q,B.aU,B.aU,B.AB,35,new A.MN(70,s,1/0,70),70,new A.b1(0,0,30,0),s)},
+return new A.tv(!1,p,r,0,4,q,B.aU,B.aU,B.AB,35,new A.MN(80,s,1/0,80),80,new A.b1(0,0,30,0),s)},
 Eo(a){var s,r,q,p=null,o=A.bH(a,p,t.w).w
 if(o.a.a<1000){o=A.aF(50,B.N.C()>>>16&255,B.N.C()>>>8&255,B.N.C()&255)
 s=A.c([new A.eN(new A.b1(0,20,0,0),p,p)],t.D)
@@ -77199,7 +77202,7 @@ return A.fo(q,q,B.ib,B.ao,A.iz(q,q,q,q,q,q))})
 s($,"aHs","ajR",()=>A.fQ(":(\\w+)(\\((?:\\\\.|[^\\\\()])+\\))?",!0,!1))
 s($,"aHw","asd",()=>{var q=null,p=t.yo
 p=A.c([A.ah6(new A.af9(),q,"/",A.c([A.ah6(q,new A.afa(),"/privacyPolicy",B.lw)],p))],p)
-return A.av2(!1,q,q,q,q,"/",q,q,q,!1,q,!0,q,!0,new A.JQ(new A.a2O(p,A.aDv(),5,q)))})
+return A.av2(!1,q,q,q,q,"/",q,q,q,!1,q,!0,q,!1,new A.JQ(new A.a2O(p,A.aDv(),5,q)))})
 s($,"aFp","ajz",()=>{var q=null,p=A.ad("ak<a6>")
 return A.an([B.iz,A.VH(q,p),B.f_,A.VH(q,p),B.iA,A.VH(q,p),B.dy,A.VH(q,p)],A.ad("mW"),t.yi)})
 s($,"aED","ajw",()=>{var q=null
